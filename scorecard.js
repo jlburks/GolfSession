@@ -70,7 +70,21 @@ y[0].addHole(4)
 y[0].addHole(6)
 y[0].addHole(3)
 y[0].addHole(7)
+y[0].addHole(3)
+y[0].addHole(2)
+y[0].addHole(4)
+y[0].addHole(6)
+y[0].addHole(3)
+y[0].addHole(7)
+y[0].addHole(3)
+y[0].addHole(2)
+y[0].addHole(4)
+y[0].addHole(6)
+y[0].addHole(3)
+y[0].addHole(1)
 
 
 console.log(y[0].getCurrentScore())
+
+console.log(y[0].getCurrentScore() - x.par)
 
