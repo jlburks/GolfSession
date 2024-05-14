@@ -74,4 +74,3 @@ y[0].addHole(7)
 
 console.log(y[0].getCurrentScore())
 
-//testing something
