@@ -84,7 +84,9 @@ y[0].addHole(3)
 y[0].addHole(1)
 
 
-console.log(y[0].getCurrentScore())
+console.log("current total score: ", y[0].getCurrentScore())
 
-console.log(y[0].getCurrentScore() - x.par)
+console.log("cuurent score: ", y[0].getCurrentScore() - x.par)
+
+
 
