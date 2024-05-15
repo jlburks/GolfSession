@@ -10,7 +10,6 @@ function coursePar(parList) {
     return num;
 }
 
-
 // class for game session 
 // main function
 function GameSession(parList,playerList) {
@@ -37,44 +36,38 @@ GameSession.prototype.createPlayerScoreRow = function() {
 }
 
 
-
-
-
-
-
-
 // test cases
 
 // set game session class
 // parameters (par list, player list)
-// const x = new GameSession([4,5,3,4,4,4,5,4,3,5,4,4,3,5,4,4,3,4],["denji","makima","pochita","asa"])
+const x = new GameSession([4,5,3,4,4,4,5,4,3,5,4,4,3,5,4,4,3,4],["denji","makima","pochita","asa"])
 
-// // set up player game cards
-// const y = x.createPlayerScoreRow()
+// set up player game cards
+const y = x.createPlayerScoreRow()
 
-// y[0].addHole(3)
-// y[0].addHole(2)
-// y[0].addHole(4)
-// y[0].addHole(6)
-// y[0].addHole(3)
-// y[0].addHole(7)
-// y[0].addHole(3)
-// y[0].addHole(2)
-// y[0].addHole(4)
-// y[0].addHole(6)
-// y[0].addHole(3)
-// y[0].addHole(7)
-// y[0].addHole(3)
-// y[0].addHole(2)
-// y[0].addHole(4)
-// y[0].addHole(6)
-// y[0].addHole(3)
-// y[0].addHole(1)
+y[0].addHole(3)
+y[0].addHole(2)
+y[0].addHole(4)
+y[0].addHole(6)
+y[0].addHole(3)
+y[0].addHole(7)
+y[0].addHole(3)
+y[0].addHole(2)
+y[0].addHole(4)
+y[0].addHole(6)
+y[0].addHole(3)
+y[0].addHole(7)
+y[0].addHole(3)
+y[0].addHole(2)
+y[0].addHole(4)
+y[0].addHole(6)
+y[0].addHole(3)
+y[0].addHole(1)
 
 
-// console.log("current total score: ", y[0].getCurrentScore())
+console.log("current total score: ", y[0].getCurrentScore())
 
-// console.log("cuurent score: ", y[0].getCurrentScore() - x.par)
+console.log("cuurent score: ", y[0].getCurrentScore() - x.par)
 
 
 
