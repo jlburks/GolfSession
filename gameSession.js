@@ -1,3 +1,5 @@
+const scorecard = require('./scorecard')
+
 
 // add all pars on each hole for course par
 function coursePar(parList) {
@@ -7,28 +9,6 @@ function coursePar(parList) {
     }
     return num;
 }
-
-//perhaps this should be an object
-// key name and score is a list associated with name
-function playerScore(player, currentScores=[]) {
-    this.player = player; // player name
-    this.currentScores = currentScores // list of current scores
-    
-}
-
-playerScore.prototype.addHole = function(strokes) {
-    this.currentScores.push(strokes)
-}
-
-playerScore.prototype.getCurrentScore = function(parList) {
-    let score = 0
-    for(let i=0; i<this.currentScores.length;i++){
-        score += this.currentScores[i]
-    }
-    return score;
-}
-
-////////////////////////////////
 
 
 // class for game session 
@@ -50,7 +30,7 @@ GameSession.prototype.getPlayerCount = function() {
 GameSession.prototype.createPlayerScoreRow = function() {
     let wyoming = []
     for (let i=0; i<this.playerCount; i++){
-        let x = new playerScore(this.playerList[i])
+        let x = new scorecard.playerScore(this.playerList[i])
         wyoming.push(x)
     }
     return wyoming
