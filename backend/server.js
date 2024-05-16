@@ -3,6 +3,8 @@
 // 2) set up game cards (const y = x.createPlayerScoreRow())
 // Is work primarly done in frontend or backend? Probaly the backend I think
 
+const gameSess = require('./gameSession.js')
+
 const express = require('express');
 const app = express();
 
@@ -22,6 +24,8 @@ app.post('/login', (req,res) => {
 app.post('/setupGame' ,(req,res) => {
     const {parList, playerList} =  req.body
     console.log(parList,playerList)
+    const x = new gameSess.GameSession(parList, playerList)
+    res.json({"gameCreated": true})
 })
 
 
